@@ -7,9 +7,12 @@
 body {
     display: flex;
     background: #f2f2f2;
-    height: 100vh;
+    height: 100%;
+    
+    
 
 }
+
 
 .display {
     padding: 10px;
@@ -27,12 +30,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 300px;
     border: 2px solid black;
-    height: 380px;
+    margin: 500px;
+    height: 400px;
     max-width: 400px;
     border-radius: 20px;
-    background: black;
+    background: yellow;
+    ;
     
 
 }
@@ -64,3 +68,15 @@ button {
     grid-column: span 2
 }
     
+
+
+@media   screen and (max-width: 600px) {
+    .calculator {
+        background-color: black;
+        
+    }
+    buttons {
+        background: white;
+        color: black;
+    }
+}
