@@ -1,14 +1,9 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    background: #f2f2f2;
-    height: 100%;
+  
+    background: rgba(0, 0, 0, 0.918);
+    height: 100vh;
     
     
 
@@ -16,8 +11,10 @@ body {
 
 .title {
     display: flex;
-    padding: 20px;
-    justify-content:center;
+    justify-self:center;
+    flex-direction: row;
+    height: 100px;
+    color: white;
 
 
     
@@ -25,9 +22,20 @@ body {
   
 }
 
+.mvp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+  
+    
+   
+}
+
+
 
 .display {
-    padding: 10px;
+    padding: 7px;
     margin-top: 16px;
     border-radius: 16px;
     width: 200px;
@@ -43,11 +51,13 @@ body {
     align-items: center;
     flex-direction: column;
     border: 2px solid black;
-    margin: 500px;
+    margin: 0;
+    padding: 0;
     height: 400px;
     max-width: 400px;
     border-radius: 20px;
-    background: yellow;
+    background: rgb(255, 0 ,0);
+    flex-shrink: 1;
     
     
 
@@ -76,21 +86,4 @@ button {
    
 }
 
-.zero{
-    grid-column: span 2
-}
-    
 
-
-@media   screen and (max-width: 1104px) {
-    .calculator {
-        background-color: black;
-        
-    }
-    buttons {
-        background: white;
-        color: black;
-    }.display{
-        width: 185px;
-    }
-}
